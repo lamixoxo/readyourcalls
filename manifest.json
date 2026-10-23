@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Call Subtitles",
+  "version": "1.0.0",
+  "description": "Live subtitles for any browser-based call (Meet, Zoom Web, Teams, Discord...) using Whisper transcription.",
+  "minimum_chrome_version": "116",
+  "permissions": ["tabCapture", "offscreen", "activeTab", "scripting", "storage"],
+  "host_permissions": ["https://api.openai.com/*"],
+  "background": { "service_worker": "src/background.js" },
+  "action": {
+    "default_title": "Call Subtitles",
+    "default_popup": "src/popup.html"
+  }
+}

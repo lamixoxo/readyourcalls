@@ -1,0 +1,8 @@
+body { width: 280px; padding: 14px; font: 13px system-ui, sans-serif; color: #1a1a1a; }
+h1 { font-size: 16px; margin: 0 0 12px; }
+label { display: block; margin-bottom: 10px; font-weight: 500; }
+input, select { width: 100%; box-sizing: border-box; margin-top: 4px; padding: 6px; font: inherit; }
+.row { display: flex; gap: 10px; }
+button { width: 100%; padding: 9px; border: 0; border-radius: 6px; background: #2563eb; color: #fff; font: 600 14px system-ui; cursor: pointer; }
+button.stop { background: #dc2626; }
+#status { min-height: 16px; margin: 8px 0 0; color: #b91c1c; }

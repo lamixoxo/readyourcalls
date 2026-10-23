@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>Call Subtitles</h1>
+
+    <label>OpenAI API key
+      <input id="apiKey" type="password" placeholder="sk-..." autocomplete="off" />
+    </label>
+
+    <label>Spoken language
+      <select id="language">
+        <option value="">Auto-detect</option>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="it">Italian</option>
+        <option value="pt">Portuguese</option>
+        <option value="nl">Dutch</option>
+        <option value="ru">Russian</option>
+        <option value="ar">Arabic</option>
+        <option value="hi">Hindi</option>
+        <option value="ja">Japanese</option>
+        <option value="ko">Korean</option>
+        <option value="zh">Chinese</option>
+      </select>
+    </label>
+
+    <div class="row">
+      <label>Chunk (s)
+        <input id="chunkSeconds" type="number" min="3" max="15" value="5" />
+      </label>
+      <label>Font (px)
+        <input id="fontSize" type="number" min="12" max="48" value="22" />
+      </label>
+    </div>
+
+    <button id="toggle">Start subtitles</button>
+    <p id="status"></p>
+    <script src="popup.js"></script>
+  </body>
+</html>
